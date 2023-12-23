@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/* !* include-media *! */
+
+@import "~include-media/dist/include-media";
+
+/* !* reset/normalize *! */
+
+@import "utils/reset";
+
+/* !* utils *! */
+
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/app";
+
+/* !* components *! */
+
+@import "components/header";
+@import "components/footer";
+
+/* !* layout parts *! */

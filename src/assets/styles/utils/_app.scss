@@ -1,0 +1,49 @@
+/* set default body styles */
+body {
+  position: relative;
+  min-height: 100%;
+  background-color: $white;
+  color: $black;
+  font-family: $default-fonts;
+  font-size: 100%;
+  line-height: normal;
+  text-size-adjust: 100%;
+}
+
+/* default class */
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  overflow: hidden;
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+/* app */
+
+.app {
+  display: block;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 100%;
+  min-height: 1px;
+}
+
+/* container */
+
+.container {
+  display: block;
+  box-sizing: border-box;
+  width: calc(100% - ($container-gap * 2));
+  max-width: $container-width;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include clearfix;
+
+  &--fluid {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,44 @@
+/* vars */
+
+$images: "../images/";
+
+/* fonts */
+
+$default-fonts:
+  "Noto Sans JP",
+  hiragino sans,
+  "ヒラギノ角ゴシック",
+  hiragino kaku gothic pron,
+  "ヒラギノ角ゴ ProN W3",
+  roboto,
+  "Droid Sans",
+  yugothic,
+  "游ゴシック",
+  meiryo,
+  "メイリオ",
+  verdana,
+  "ＭＳ Ｐゴシック",
+  sans-serif;
+
+$breakpoints: (
+  xs: 375px,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  xxl: 1440px,
+);
+
+/* container size/gap */
+
+$container-gap: 20px;
+$container-width: 1280px;
+
+/* colors */
+
+$white: #fff;
+$black: #000;
+
+/* transitions */
+
+$transition: 0.4s;
