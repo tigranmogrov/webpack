@@ -69,6 +69,7 @@
     "postcss-preset-env": "^9.3.0",
     "prettier": "^3.1.1",
     "prettier-plugin-ejs": "^0.0.18",
+    "purgecss-webpack-plugin": "^5.0.0",
     "sass": "^1.53.0",
     "sass-loader": "^13.0.2",
     "stylelint": "^16.0.2",
@@ -83,6 +84,7 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "glob": "^10.3.10",
     "include-media": "^2.0.0"
   }
 }
