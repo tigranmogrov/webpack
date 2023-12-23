@@ -1,0 +1,10 @@
+# Ignore artifacts:
+test
+public
+dist
+config/*
+node_modules
+package.json
+package-lock.json
+.eslintrc.json
+.husky/*

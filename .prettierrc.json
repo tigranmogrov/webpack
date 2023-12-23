@@ -1,0 +1,29 @@
+{
+  "plugins": [
+    "prettier-plugin-ejs"
+  ],
+  "tabWidth": 2,
+  "printWidth": 115,
+  "semi": true,
+  "trailingComma": "es5",
+  "singleQuote": true,
+  "overrides": [
+    {
+      "files": [
+        "**/*.css",
+        "**/*.scss",
+        "**/*.html",
+        "*.json",
+        ".eslintrc.js"
+      ],
+      "options": {
+        "singleQuote": false
+      }
+    }
+  ],
+  "bracketSpacing": true,
+  "bracketSameLine": true,
+  "proseWrap": "always",
+  "arrowParens": "always",
+  "endOfLine": "lf"
+}
