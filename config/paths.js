@@ -3,11 +3,9 @@ const path = require('path');
 /*-------------------*/
 
 module.exports = {
+  src: path.resolve(__dirname, '../src'),
 
-    src: path.resolve(__dirname, '../src'),
+  dist: path.resolve(__dirname, '../dist'),
 
-    dist: path.resolve(__dirname, '../dist'),
-
-    devServerDir: path.join(__dirname, '../src'),
-
+  devServerDir: path.join(__dirname, '../src'),
 };

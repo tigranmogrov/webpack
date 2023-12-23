@@ -4,41 +4,38 @@ const entry = require('./entry');
 const rules = require('./rules');
 const paths = require('./paths');
 
-
 /*-------------------*/
 
 module.exports = {
+  entry: entry.common,
 
-    entry: entry.common,
+  output: output.prod,
 
-    output: output.prod,
+  module: { rules: rules.common },
 
-    module: { rules: rules.common },
+  plugins: plugins.common,
 
-    plugins: plugins.common,
+  optimization: {
+    runtimeChunk: 'single',
+  },
 
-    optimization: {
-        runtimeChunk: 'single',
-    },
+  resolve: { extensions: ['.ts', '.tsx', '.js'] },
 
-    resolve: { extensions: ['.ts', '.tsx', '.js'] },
+  stats: 'minimal',
 
-    stats: 'minimal',
+  cache: true,
 
-    cache: true,
+  watchOptions: {
+    ignored: /node_modules/,
+  },
 
-    watchOptions: {
-        ignored: /node_modules/,
-    },
-
-    devServer: {
-        static: { directory: paths.devServerDir },
-        historyApiFallback: true,
-        open: true,
-        compress: true,
-        hot: true,
-        port: 3000,
-        client: { overlay: { errors: true, warnings: false } },
-    },
-
+  devServer: {
+    static: { directory: paths.devServerDir },
+    historyApiFallback: true,
+    open: true,
+    compress: true,
+    hot: true,
+    port: 3000,
+    client: { overlay: { errors: true, warnings: false } },
+  },
 };

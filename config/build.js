@@ -1,4 +1,4 @@
-const {merge} = require('webpack-merge');
+const { merge } = require('webpack-merge');
 
 /*-------------------*/
 
@@ -8,13 +8,10 @@ const rules = require('./rules');
 
 /*-------------------*/
 
-
 module.exports = merge(common, {
+  mode: 'none',
 
-    mode: 'none',
+  module: { rules: rules.prod },
 
-    module: {rules: rules.prod,},
-
-    plugins: plugins.prod,
-
+  plugins: plugins.prod,
 });

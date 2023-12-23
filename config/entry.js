@@ -1,9 +1,7 @@
 /*-------------------*/
 
 module.exports = {
-
-    common: {
-      main: ['./src/assets/js/main.js', './src/assets/styles/main.scss'],
-    },
-
+  common: {
+    main: ['./src/assets/js/main.js', './src/assets/styles/main.scss'],
+  },
 };
