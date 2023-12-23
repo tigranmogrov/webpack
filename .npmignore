@@ -1,0 +1,6 @@
+.git
+.github
+public
+dist
+test
+node_modules
