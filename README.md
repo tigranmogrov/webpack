@@ -98,6 +98,16 @@ For Example
 "prod": "webpack --node-env hash -c config/prod.js"
 ````
 
+#### Removing unused CSS
+
+Add the prod scripts in package  `--node-env pure-css`
+
+For Example
+
+````
+"prod": "webpack --node-env pure-css -c config/prod.js"
+````
+
 #### Linters
 
 Run `npm run lint` to find problematic patterns or code\
