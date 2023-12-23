@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "webpack serve -c config/dev.js",
     "build": "webpack -c config/build.js",
-    "prod": "webpack -c config/prod.js",
+    "prod": "webpack --node-env pure-css -c config/prod.js",
     "watch": "webpack --watch -c config/dev.js",
     "es-lint:fix": "eslint ./src --fix --max-warnings=0 --color",
     "prettier:fix": "prettier ./src/**/*.{html,ejs,scss,js} --write",
@@ -57,6 +57,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-ejs": "^0.0.2",
     "fs": "^0.0.2",
+    "glob": "^10.3.10",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.1",
@@ -84,7 +85,6 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "glob": "^10.3.10",
     "include-media": "^2.0.0"
   }
 }
