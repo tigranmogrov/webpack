@@ -37,12 +37,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tigranmogrov/bundler.git"
+    "url": "git+https://github.com/tigranmogrov/webpack.git"
   },
   "author": "Tigran Mogrov",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tigranmogrov/bundler/issues"
+    "url": "https://github.com/tigranmogrov/webpack/issues"
   },
   "devDependencies": {
     "@babel/core": "^7.18.6",
