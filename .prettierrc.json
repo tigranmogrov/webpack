@@ -1,6 +1,7 @@
 {
   "plugins": [
-    "prettier-plugin-ejs"
+    "prettier-plugin-ejs",
+    "@trivago/prettier-plugin-sort-imports"
   ],
   "tabWidth": 2,
   "printWidth": 115,
@@ -25,5 +26,8 @@
   "bracketSameLine": true,
   "proseWrap": "always",
   "arrowParens": "always",
-  "endOfLine": "lf"
+  "endOfLine": "lf",
+   "importOrder": ["^@core/(.*)$", "^@server/(.*)$", "^@ui/(.*)$", "^[./]"],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
 }
